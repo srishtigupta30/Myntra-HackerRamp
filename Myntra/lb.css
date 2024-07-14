@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none !important;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: white;
+  box-shadow: 0 4px 12px 0 rgba(0 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+
+img {
+  width: 60px;
+  margin-right: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0 auto;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-left ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgba(28, 28, 28, 0.705);
+  font-size: 13px;
+}
+
+.search-bar {
+  width: 180px;
+  line-height: 40px;
+  border-radius: 4px;
+  background: rgb(231, 230, 230);
+  font-size: 12px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: 0;
+  outline: none;
+  width: 75%;
+  font-size: 12px;
+}
+
+.nav-right .search-bar i {
+  font-size: 14px;
+  color: rgba(28, 28, 28, 0.705);
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.style-sphere {
+  position: relative;
+}
+
+.style-sphere span {
+  position: absolute;
+  top: -5px;
+  left: 90px;
+  font-size: 10px;
+  color: rgb(211, 70, 94);
+}
+
+.nav-right div {
+  margin: 0 12px;
+  text-align: center;
+}
+
+.nav-right div p {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(28, 28, 28, 0.705);
+}
+
+.nav-right div i {
+  font-size: 18px;
+  color: rgba(28, 28, 28, 0.705);
+}
+
+.nav-left i {
+  font-size: 20px;
+  background-color: rgb(231, 230, 230);
+  padding: 10px;
+  border-radius: 50px;
+  display: none;
+}
+
+.leader-board {
+  position: relative;
+}
+
+.leader-board span {
+  position: absolute;
+  top: -5px;
+  left: 50px;
+  font-size: 10px;
+  color: rgb(211, 70, 94);
+}
+
+@media print {
+  .table,
+  .table__body {
+    overflow: visible;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+
+
+body {
+  min-height: 100vh;
+  background: url(images/background.jpg) center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.table {
+  width: 82vw;
+  height: 80vh;
+  background-color: #fff5;
+  position: relative;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: 0.8rem;
+  top: 40px;
+  left: 25px;
+  overflow: hidden;
+}
+
+.table__header {
+  width: 100%;
+  height: 12%;
+  background-color: #fff4;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.table__header h1{
+    margin-left: 20px;
+}
+
+
+.table__header .input-group {
+  width: 35%;
+  height: 100%;
+  background-color: #fff5;
+  padding: 0 0.8rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.table__header .input-group:hover {
+  width: 45%;
+  background-color: #fff8;
+  box-shadow: 0 0.1rem 0.4rem #0002;
+}
+
+.table__header .input-group img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.table__header .input-group input {
+  width: 100%;
+  padding: 0 0.5rem 0 0.3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.table__body {
+  width: 95%;
+  max-height: calc(89% - 1.6rem);
+  background-color: #fffb;
+  margin: 0.8rem auto;
+  border-radius: 0.6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+
+.table__body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+table {
+  width: 100%;
+}
+
+td img {
+  width: 36px;
+  height: 36px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+
+  vertical-align: middle;
+}
+
+table,
+th, td{
+  border-collapse: collapse;
+  padding: 1rem;
+  text-align: center;
+}
+.data{
+  width: 30%;
+  padding: 1rem;
+  text-align: justify;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #d5d1defe;
+  cursor: pointer;
+  height: 50px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #0000000b;
+}
+
+tbody tr {
+  --delay: 0.1s;
+  transition: 0.5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+tbody tr:hover {
+  background-color:  rgb(215, 204, 219) !important;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+  transition: 0.2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+  padding: 0;
+  font: 0 / 0 sans-serif;
+  transition: 0.2s ease-in-out 0.5s;
+}
+
+tbody tr.hide td img {
+  width: 0;
+  height: 0;
+  transition: 0.2s ease-in-out 0.5s;
+}
+
+
+
+.footer1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 70px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.footer2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 20px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-left i {
+    display: block;
+  }
+
+  img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  header {
+    height: 60px;
+  }
+  .search-bar {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    left: 0px;
+    border-radius: 50px;
+    background: #fff;
+    border: 1px solid #eee;
+  }
+  .nav-right div {
+    margin: 0 8px;
+  }
+  .nav-right div p {
+    font-size: 10px;
+  }
+  .leaderboard {
+    padding: 0;
+  }
+  .theme-img {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+  .description {
+    display: block;
+    transform: translateY(0);
+  }
+  table {
+    max-width: 100vw;
+    overflow-x: scroll;
+  }
+}

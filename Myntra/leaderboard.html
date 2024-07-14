@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="lb.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link rel="icon" href="images/logo.webp" type="image/png">
+    <title>LeaderBoard</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+          <div class="nav-left">
+            <a href="index.html"><img src="images/logo.webp" alt="logo" /></a>
+            <ul class="nav-menu">
+              <li>MEN</li>
+              <li>WOMEN</li>
+              <li>KIDS</li>
+              <li>HOME&LIVING</li>
+              <li>BEAUTY</li>
+              <li>STUDIO</li>
+              <a href="stylesphere.html"><li class="style-sphere">STYLE SPHERE<span>New</span></li></a>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+  
+          <div class="nav-right">
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Contest - VougeVote" />
+            </div>
+            <div>
+              <i class="fa-solid fa-user"></i>
+              <p>Profile</p>
+              </div>
+              <div class="leader-board">
+                <a style="text-decoration: none;" href="leaderboard.html">
+                <i class="fa-solid fa-trophy"><span>New</span></i>
+                  <p>LeaderBoard</p>
+                </a>
+              </div>
+              <div>
+              <i class="fa-regular fa-heart"></i>
+              <p>Wishlist</p>
+              </div>
+          <div>
+              <i class="fa-solid fa-bag-shopping"></i>
+              <p>Bag</p>
+          </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>LEADERBOARD</h1>
+            <div class="input-group">
+              <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search" placeholder="Search" id="search" oninput="search()">
+            </div>
+            
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> RANK </th>
+                        <th class="data"> PARTICIPANT </th>
+                        <th class="data">PROFILE_ID </th>
+                        <th> SCORE </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td class="data"> <img src="images/User1.jpg">Jose Brag</td>
+                        <td class="data"> @JoseBrag321 </td>
+                        <td> 876 </td>
+                        
+                    </tr>
+                    <tr>
+                      <td > 2 </td>
+                      <td class="data"> <img src="images/User2.jpg">Jeet Saru</td>
+                      <td class="data"> @jeetuuu </td>
+                      <td> 716 </td>
+                      
+                  </tr>
+                  <tr>
+                    <td> 3 </td>
+                    <td class="data"> <img src="images/User3.jpg">Alson GC</td>
+                    <td class="data"> @GCAlson </td>
+                    <td> 597 </td>
+                    
+                </tr>
+                <tr>
+                  <td> 4 </td>
+                  <td class="data"> <img src="images/User4.jpg">Sarita Limbu</td>
+                  <td class="data"> @Limbu_Sarita</td>
+                  <td> 434 </td>
+                  
+              </tr>
+              <tr>
+                <td> 5 </td>
+                <td class="data"> <img src="images/User5.jpg">Alex Gonley</td>
+                <td class="data"> @Alexandraaaa </td>
+                <td> 356</td>
+                
+            </tr>
+            <tr>
+              <td> 6 </td>
+              <td class="data"> <img src="images/User1.jpg">U know</td>
+              <td class="data"> @uknowme </td>
+              <td> 123 </td>
+              
+          </tr>
+          <tr>
+            <td  style="cursor:pointer" colspan="4" ><a href="leaderboard.html">-------------- Click To Reveal Full Table --------------</a></td>
+            
+        </tr>
+        <tr>
+          <td> 314 </td>
+          <td class="data"> <img src="images/you.jpeg">Karasuno(You)</td>
+          <td class="data"> @karasuno_ </td>
+          <td> 77 </td>
+          
+      </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+      
+    
+    <footer>
+      <div>
+        <img class="footer1" src="images/coupon1.png" >
+      </div>
+      <div>
+        <img class="footer2" src="images/coupon2.png" >
+      </div>
+    </footer>
+
+</body>
+<script>
+    function search(){
+        var text = document.getElementById('search').value;
+        const tr = document.getElementsByTagName('tr');
+        for (let i=1;i<tr.length;i++){
+            if(!tr[i].children[1].children[1].innerHTML.toLowerCase().includes(text.toLowerCase())){
+                tr[i].style.display = 'none';
+            }
+            else{
+                tr[i].style.display = '';
+            }
+        }
+    }
+</script>
+</html>

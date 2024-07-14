@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="ss.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="images/logo.webp" type="image/png">
+    <title>Style Sphere</title>
+</head>
+<body>
+    <header>
+      <!---------------------- NAVBAR ------------------------>
+        <nav>
+          <div class="container">
+            <a href="index.html">
+              
+              <img src="images/logo.webp" alt="logo" />
+            </a>
+            <a href="stylesphere.html">
+              
+              <img src="images/stylesphere.png" class="heading" />
+            </a>
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" placeholder="Search for creators, inspirstions and contests" />
+            </div>
+            <div class="create">
+              <label class="btn btn-primary" for="create-post">Create</label>
+            </div>
+          </div>
+  
+          <div class="nav-right">
+            <div>
+              <i class="fa-solid fa-user"></i>
+              <p>Profile</p>
+              </div>
+              <div class="leader-board">
+                <a style="text-decoration: none;" href="leaderboard.html">
+                <i class="fa-solid fa-trophy"><span style="font-family:Poppins, sans-serif">New</span></i>
+                  <p>LeaderBoard</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!---------------------- MAIN ------------------------>
+      <main>
+        <div class="container">
+          <!---------------------- LEFT ------------------------>
+          <div class="left">
+            <a class="profile">
+              <div class="profile-photo">
+                <img src="images/you.jpeg">
+              </div>
+              <div class="handle">
+                <h4>Karasuno</h4>
+                <p class="text-muted">
+                  @karasuno_
+                </p>
+              </div>
+            </a>
+            <!---------------------- SIDEBAR ------------------------>
+            <div class="sidebar">
+              <a href="index.html" class="menu-item end">
+                <span><i class="fa-solid fa-house"></i><h3>Home</h3></span>
+              </a>
+              <a class="menu-item active">
+                <span><i class="fa-solid fa-compass"></i><h3>Explore</h3></span>
+              </a>
+              <a  class="menu-item">
+                <span><i class="fa-solid fa-bell"><small class="notification-count">6</small></i><h3>Notifications</h3></span>
+              </a>
+              <a class="menu-item">
+                <span><i class="fa-solid fa-bookmark"></i><h3>Bookmarks</h3></span>
+              </a>
+              <a class="menu-item">
+                <span><i class="fa-solid fa-chart-simple"></i><h3>Analytics</h3></span>
+              </a>
+              <a class="menu-item end">
+                <span><i class="fa-solid fa-gear"></i><h3>Settings</h3></span>
+              </a>
+            </div>
+            <label for="create-post" class="btn btn-primary">Create Post</label>
+          </div>
+          <!---------------------- MIDDLE ------------------------>
+          <div class="middle">
+            <div class="stories">
+              <div class="story">
+                <p class="name">Retrosphere</p>
+              </div>
+              <div class="story">
+                <p class="name">Sustainability</p>
+              </div>
+              <div class="story">
+                <p class="name">Space</p>
+              </div>
+              <div class="story">
+                <p class="name">Monochrome</p>
+              </div>
+              
+            </div>
+
+            <form class="create-post">
+              <div class="profile-photo">
+                <img src="images/you.jpeg">
+              </div>
+              <input type="text" placeholder="What's on your mind?" id="create-post">
+              <input type="submit" value="Post" class="btn btn-primary">
+            </form>
+
+
+            <div class="feeds">
+              
+              <div class="feed">
+                <div class="head">
+                  <div class="user">
+                    <div class="profile-photo">
+                      <img src="images/User1.jpg">
+                    </div>
+                    <div class="info">
+                      <h3>Jose Brag</h3>
+                      <small>Dubai, 15 MINUTES AGO</small>
+                    </div>
+                  </div>
+                  <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span>
+                </div>
+                <div class="post">
+                  <img src="images/post1.webp">
+                </div>
+                <div class="action-button">
+                  <div class="interaction-buttons">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </div>
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+                <div class="voted-by">
+                  <span><img src="images/User2.jpg" ></span>
+                  <span><img src="images/User3.jpg" ></span>
+                  <span><img src="images/User4.jpg" ></span>
+                  <p>Voted By <b>Lily Simons</b> and 2,323 others</p>
+                </div>
+                <div class="caption">
+                  <p><b>Jose Brag </b>pick throw mix and match
+                    <span class="hash-tag"> #retrosphere</span>
+                  </p>
+                </div>
+              </div>
+              <div class="feed">
+                <div class="head">
+                  <div class="user">
+                    <div class="profile-photo">
+                      <img src="images/User2.jpg">
+                    </div>
+                    <div class="info">
+                      <h3>Jeet Saru</h3>
+                      <small>India, 30 MINUTES AGO</small>
+                    </div>
+                  </div>
+                  <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span>
+                </div>
+                <div class="post">
+                  <img src="images/post2.jpg">
+                </div>
+                <div class="action-button">
+                  <div class="interaction-buttons">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </div>
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+                <div class="voted-by">
+                  <span><img src="images/User1.jpg" ></span>
+                  <span><img src="images/User3.jpg" ></span>
+                  <span><img src="images/User4.jpg" ></span>
+                  <p>Voted By <b>Alson GC</b> and 1,098 others</p>
+                </div>
+                <div class="caption">
+                  <p><b>Jeet Saru </b>pick throw mix and match
+                    <span class="hash-tag"> #retrosphere</span>
+                  </p>
+                </div>
+              </div>
+              <div class="feed">
+                <div class="head">
+                  <div class="user">
+                    <div class="profile-photo">
+                      <img src="images/User3.jpg">
+                    </div>
+                    <div class="info">
+                      <h3>Alson GC</h3>
+                      <small>New York, 50 MINUTES AGO</small>
+                    </div>
+                  </div>
+                  <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span>
+                </div>
+                <div class="post">
+                  <img src="images/post3.jpg">
+                </div>
+                <div class="action-button">
+                  <div class="interaction-buttons">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </div>
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+                <div class="voted-by">
+                  <span><img src="images/User2.jpg" ></span>
+                  <span><img src="images/User5.jpg" ></span>
+                  <span><img src="images/User4.jpg" ></span>
+                  <p>Voted By <b>Lily Simons</b> and 4,235 others</p>
+                </div>
+                <div class="caption">
+                  <p><b>Alson GC </b>pick throw mix and match
+                    <span class="hash-tag"> #retrosphere</span>
+                  </p>
+                </div>
+              </div>
+              <div class="feed">
+                <div class="head">
+                  <div class="user">
+                    <div class="profile-photo">
+                      <img src="images/User4.jpg">
+                    </div>
+                    <div class="info">
+                      <h3>Sarita Limbu</h3>
+                      <small>New Zealand, 1 HOUR AGO</small>
+                    </div>
+                  </div>
+                  <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span>
+                </div>
+                <div class="post">
+                  <img src="images/post4.webp" >
+                </div>
+                <div class="action-button">
+                  <div class="interaction-buttons">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </div>
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+                <div class="voted-by">
+                  <span><img src="images/User2.jpg" ></span>
+                  <span><img src="images/User3.jpg" ></span>
+                  <span><img src="images/User4.jpg" ></span>
+                  <p>Voted By <b>Lily Simons</b> and 3,678 others</p>
+                </div>
+                <div class="caption">
+                  <p><b>Sarita Limbu </b>pick throw mix and match
+                    <span class="hash-tag"> #retrosphere</span>
+                  </p>
+                </div>
+              </div>
+              <div class="feed">
+                <div class="head">
+                  <div class="user">
+                    <div class="profile-photo">
+                      <img src="images/User5.jpg">
+                    </div>
+                    <div class="info">
+                      <h3>Alex Gonley</h3>
+                      <small>L.A., 4 HOURS AGO</small>
+                    </div>
+                  </div>
+                  <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span>
+                </div>
+                <div class="post">
+                  <img src="images/post5.avif" alt="">
+                </div>
+                <div class="action-button">
+                  <div class="interaction-buttons">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </div>
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+                <div class="voted-by">
+                  <span><img src="images/User2.jpg" ></span>
+                  <span><img src="images/User3.jpg" ></span>
+                  <span><img src="images/User4.jpg" ></span>
+                  <p>Voted By <b>Lily Simons</b> and 2,323 others</p>
+                </div>
+                <div class="caption">
+                  <p><b>Alex Gonley </b>pick throw mix and match
+                    <span class="hash-tag"> #retrosphere</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+          
+        </div>
+      </main>
+      <footer>
+        <br><br><br><br><br>
+      </footer>
+
+
+</body>
+</html>
